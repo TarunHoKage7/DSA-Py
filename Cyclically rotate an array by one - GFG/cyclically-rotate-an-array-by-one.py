@@ -1,14 +1,14 @@
 #User function Template for python3
 
 def rotate( arr, n):
-    arr.insert(0, arr[-1])
-    arr.pop(-1)
+    '''arr.insert(0, arr[-1])
+    arr.pop(-1)'''
     
     
-    
-    
-    
-
+    temp = arr[0]
+    for i in range(1, n):
+        temp, arr[i] = arr[i], temp
+    temp,arr[0] = arr[0],temp
 
 #{ 
  # Driver Code Starts
