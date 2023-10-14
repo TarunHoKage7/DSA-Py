@@ -1,5 +1,6 @@
 class Solution(object):
     def sortedSquares(self, nums):
+        #or check for the turning point(if exists) and treat the left half as a reverse sorted array and apply merge sorted arrays.
         arr1 = []
         arr2 = []
         templ = len(nums)
